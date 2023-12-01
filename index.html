@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Cafe</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="shortcut icon" type="image/x-icon" href="images/icons/coffee.png" />
+</head>
+<body>
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">TRANG CHỦ</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">THÔNG TIN</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">ĐỊA CHỈ</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Mở cửa từ 6h sáng đến 5h chiều</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">the<br>Cafe</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">số 3, Ngõ 347, Cổ Nhuế</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">GIỚI THIỆU VỀ CAFE</span></h5>
+    <p>Quán cà phê được thành lập tại Blabla bởi Mr. Smith đối với Internet bản thân nó đã là một nỗi đau, anh ấy sẽ theo đuổi sự phát triển của giáo dục, nhưng đồng thời cũng có rất nhiều công việc và nỗi đau. Để đi đến chi tiết nhỏ nhất, không ai nên thực hiện bất kỳ loại công việc nào trừ khi anh ta thu được lợi ích nào đó từ nó.</p>
+    <p>Ngoài thực đơn quầy pha cà phê và cà phê espresso đầy đủ, chúng tôi còn phục vụ bữa sáng và bánh mì kẹp bữa trưa mới làm theo yêu cầu, cũng như tuyển chọn các món ăn kèm, salad và các món ngon khác.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"Hãy sử dụng những sản phẩm từ thiên nhiên một cách xứng đáng - nhưng không bao giờ là quá sớm cũng không quá muộn." Tươi mới là vị ngọt mới.</i></p>
+      <p>Đầu bếp, chuyên gia cà phê và chủ sở hữu: Liam Brown</p>
+    </div>
+    <img src="/images/coffeeshop.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Giờ mở cửa:</strong> hàng ngày từ 6 giờ sáng đến 5 giờ chiều.</p>
+    <p><strong>Địa chỉ:</strong> Số 3, Ngõ 347, Cổ Nhuế, Bắc Từ Liêm, Hà Nội</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Đồ ăn</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Đồ uống</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Giỏ bánh mì</h5>
+      <p class="w3-text-grey">Các loại bánh mì trái cây tươi nướng và bánh nướng xốp 5.50</p><br>
+    
+      <h5>Granola hạnh nhân mật ong với trái cây</h5>
+      <p class="w3-text-grey">Ngũ cốc tự nhiên gồm yến mạch nướng mật ong, nho khô, hạnh nhân và chà là 7.00</p><br>
+    
+      <h5>Bánh quế Bỉ</h5>
+      <p class="w3-text-grey">Bột hương vani với bột mạch nha 7.50</p><br>
+    
+      <h5>Trứng bác</h5>
+      <p class="w3-text-grey">Trứng tráng, ớt đỏ nướng và tỏi, với hành lá 7.50</p><br>
+    
+      <h5>Bánh kếp việt quất</h5>
+      <p class="w3-text-grey">Với xi-rô, bơ và nhiều loại quả mọng 8,50</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Cà phê</h5>
+      <p class="w3-text-grey">Cà phê thường 2.50</p><br>
+    
+      <h5>Chocolato</h5>
+      <p class="w3-text-grey">Cà phê espresso sô cô la với sữa 4.50</p><br>
+    
+      <h5>Corretto</h5>
+      <p class="w3-text-grey">Whisky và cà phê 5.00</p><br>
+    
+      <h5>Trà đá</h5>
+      <p class="w3-text-grey">Trà nóng, ngoại trừ không nóng 3.00</p><br>
+    
+      <h5>Soda</h5>
+      <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
+    </div>  
+    <img src="/images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">NƠI ĐỂ TÌM THẤY CHÚNG TÔI</span></h5>
+    <p>Tìm chúng tôi tại một số địa chỉ ở một nơi nào đó.</p>
+    <img src="/images/map.jpg" class="w3-image" style="width:100%">
+    <p><span class="w3-tag">FYI!</span> Chúng tôi cung cấp dịch vụ ăn uống trọn gói cho mọi sự kiện dù lớn hay nhỏ. Chúng tôi hiểu nhu cầu của bạn và chúng tôi sẽ phục vụ các món ăn để đáp ứng các tiêu chí lớn nhất, cả về hình thức lẫn hương vị.</p>
+    <p><strong>Đặt </strong> bàn, yêu cầu món đặc biệt hôm nay hoặc chỉ cần gửi tin nhắn cho chúng tôi:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2023-11-24T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">GỬI TIN NHẮN</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by Nguyen Van Hieu</p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
